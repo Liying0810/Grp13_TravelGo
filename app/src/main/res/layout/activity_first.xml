@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity"
+    android:background="@drawable/image_one"
+    android:transitionName="background_image_transition"
+    tools:targetApi="LOLLIPOP">
+
+
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+    <TextView
+        android:id="@+id/second_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/open_sans_extra_bold"
+        android:text="Apple 1 Hotel Queensbay, Bayan Lepas"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/second_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="Take everything available in Penang with a comfort stay at Apple 1 Hotel Queensbay. Have a hassle-free trip while enjoying the services and amenities offered by Apple 1 Hotel Queensbay. Never be out of touch with your contacts, with free Wi-Fi offered throughout your stay. If you plan to arrive by car, you'll appreciate the hotel's available parking, right on-site. Front desk services including concierge service can assist with your needs. For lazy days and nights, in-room conveniences like daily housekeeping let you make the most of your room. Please be advised that smoking is not allowed in the hotel to allow cleaner air for all guests. Smoking is limited to designated areas only, for the health and well-being of all guests and staff. Equipped with handy amenities, guestrooms at Apple 1 Hotel Queensbay guarantee a comfortable stay for all travelers. Some rooms are equipped with linen service and air conditioning for your convenience. In-room entertainment such as television and cable TV is provided for guests in some selected rooms. The hotel also offers bottled water in some rooms for when you feel like it is needed."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/second_title"
+        app:layout_constraintTop_toBottomOf="@+id/second_title" />
+
+    <RatingBar
+        android:id="@+id/second_ratingbar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:max="5"
+        android:numStars="5"
+        android:progressTint="@color/colorAccent"
+        android:rating="4.5"
+        android:stepSize="0.5"
+        app:layout_constraintStart_toStartOf="@id/second_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle"
+        tools:targetApi="lollipop"/>
+
+    <TextView
+        android:id="@+id/second_rating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="4.75"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/second_ratingbar"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle"/>
+
+    <TextView
+        android:id="@+id/second_rating_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="(510)"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/second_rating_number"
+        app:layout_constraintTop_toTopOf="@id/second_rating_number"/>
+
+    <ImageView
+        android:id="@+id/seconf_arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_ratingbar"
+        android:src="@drawable/ic_up_arrow"/>
+
+    <TextView
+        android:id="@+id/more_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="More Details"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seconf_arrow_up"
+        app:layout_constraintVertical_bias="0.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

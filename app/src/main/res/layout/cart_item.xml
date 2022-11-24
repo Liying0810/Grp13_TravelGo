@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/single_room"/>
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/foodImage"
+            android:text="Deluxe Room"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@id/btnPlusOne"
+            android:text="RM 98"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnNegativeOne"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/foodName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/foodImage"
+            android:src="@drawable/ic_negative" />
+
+        <ImageButton
+            android:id="@+id/btnPlusOne"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/foodName"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/btnNegativeOne"
+            android:src="@drawable/ic_plus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtQuantity"
+            android:layout_toRightOf="@id/btnNegativeOne"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="6dp"
+            android:text="1"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_clear_24" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

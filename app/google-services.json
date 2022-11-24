@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "672736042880",
+    "project_id": "group13-travelgo",
+    "storage_bucket": "group13-travelgo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672736042880:android:a30648d8b28ca6c124eb65",
+        "android_client_info": {
+          "package_name": "com.example.group13"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672736042880-hlae5mkq0ma7r4qt9d2jciecqdcu84it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbmW6pHRwb6SZg8E5b3tCxWvvCLLyAB00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672736042880-hlae5mkq0ma7r4qt9d2jciecqdcu84it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

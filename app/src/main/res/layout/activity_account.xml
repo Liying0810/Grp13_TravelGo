@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/bgcolor"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+
+        android:accessibilityHeading="false"
+        android:background="#880808"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="655dp">
+
+        <Button
+            android:id="@+id/home1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_home_black_24dp"
+            app:backgroundTint="#000000" />
+
+        <Button
+            android:id="@+id/orderHistory1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/ic_baseline_shopping_bag_24"
+            app:backgroundTint="#000000"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <Button
+            android:id="@+id/cart1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/ic_baseline_shopping_cart_24"
+
+            app:backgroundTint="#000000"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <Button
+            android:id="@+id/account1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/ic_baseline_account_circle_24"
+            app:backgroundTint="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/hotel_logo"
+            android:transitionName="logo_image" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ic_notifications_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/firstText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="TravelGo"
+            android:textColor="@color/dark_red"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstText"
+            android:layout_alignStart="@+id/firstText"
+            android:fontFamily="@font/open_sans_light"
+            android:text="Lets start your new journey"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/logo_image"
+            app:layout_constraintTop_toBottomOf="@id/firstText" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/profile_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutTopBar"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ID_Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutTopBar"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="80dp"
+        android:inputType="textPersonName"
+        android:text="Your ID: "
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutTopBar"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="125dp"
+        android:inputType="textPersonName"
+        android:text="Email: "
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtViewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUserEmail"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="45dp"
+        android:inputType="textPersonName"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_ChangePass"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtViewSettings"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:inputType="textPersonName"
+        android:text="Change Password"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn_ChangePass"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:inputType="textPersonName"
+        android:text="Log Out"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+</RelativeLayout>

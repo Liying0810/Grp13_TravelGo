@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/bgcolor"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:accessibilityHeading="false"
+        android:background="#880808"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="-146dp"
+        tools:layout_editor_absoluteY="754dp">
+
+        <Button
+            android:id="@+id/home1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_home_black_24dp"
+            app:backgroundTint="#000000" />
+
+        <Button
+            android:id="@+id/orderHistory1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/ic_baseline_shopping_bag_24"
+            app:backgroundTint="#FFFFFF"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <Button
+            android:id="@+id/cart1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/ic_baseline_shopping_cart_24"
+            app:backgroundTint="#000000"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <Button
+            android:id="@+id/account1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/ic_baseline_account_circle_24"
+            app:backgroundTint="#000000" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/firstText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="My Bookings"
+        android:textColor="@color/dark_red"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/feedback_button"
+        android:layout_width="249dp"
+        android:layout_height="141dp"
+        android:layout_below="@+id/firstText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp"
+        android:backgroundTint="#EADC81"
+        android:text="Feedback"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnCompletedOrder"
+        android:layout_width="251dp"
+        android:layout_height="131dp"
+        android:layout_below="@+id/firstText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:backgroundTint="#0CE889"
+        android:text="Completed Orders"
+        android:textColor="@color/black"
+
+        android:textSize="25sp" />
+
+</RelativeLayout>
